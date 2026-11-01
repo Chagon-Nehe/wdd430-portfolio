@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <head className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`} />
-      <body className="flex flex-col min-h-screen">
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+      
+      <body className="flex flex-col min-h-screen intialiased">
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
@@ -27,7 +27,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
-
 
 
 

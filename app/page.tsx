@@ -23,6 +23,7 @@ const projects = [
 
 export default function Home() {
   return (
+    
     <main className="flex-grow">
       <section className="bg-gray-100 py-12">
         <div className="container mx-auto px-4 text-center">
@@ -35,6 +36,7 @@ export default function Home() {
 
       <ProjectList projects={projects} />
     </main>
+
   );
 }
 
