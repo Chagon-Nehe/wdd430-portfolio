@@ -18,7 +18,9 @@ const geistMono = Geist_Mono({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" content="Chawanangwa Gondwe's personal portfolio website" />
+      <title>Chawanangwa Gondwe Portfolio</title>
       <body className="flex flex-col min-h-screen intialiased">
         <Header />
         <main className="flex-grow">{children}</main>

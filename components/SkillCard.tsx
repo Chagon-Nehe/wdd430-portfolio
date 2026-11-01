@@ -8,7 +8,7 @@ interface SkillCardProps {
 export default function SkillCard({ name, stack, abilities, level }: SkillCardProps) {
     return (
         <div className="bg-white rounded-lg shadow-md p-4">
-            <h3 className="text-xl font-bold mb-2">{name}</h3>
+            <h2 className="text-xl font-bold mb-2">{name}</h2>
             <p className="text-gray-600 mb-2">Level: {level}</p>
             {abilities && abilities.length > 0 && (
                 <div className="mb-2">
