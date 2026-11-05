@@ -17,7 +17,7 @@ const projects = [
     title: "Full Stack Portfolio",
     description: "A comprehensive full-stack application built with Next.js and Node.js.",
     technologies: ["Next.js", "Express", "MongoDB", "Tailwind CSS"],
-    link: "https://github.com/Chagon-Nehe/wwd430-portfolio",
+    link: "https://github.com/Chagon-Nehe/wdd430-portfolio",
   },
 ];
 
