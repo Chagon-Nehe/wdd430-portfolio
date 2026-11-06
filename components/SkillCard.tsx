@@ -15,7 +15,7 @@ export default function SkillCard({ name, stack, abilities, level }: SkillCardPr
                     <h4 className="font-semibold">Abilities:</h4>
                     <ul className="list-disc list-inside">
                         {abilities.map((ability, index) => (
-                            <li key={index} className="text-gray-600">
+                            <li key={`${ability}-${index}`} className="text-gray-600">
                                 {ability}
                             </li>
                         ))}
@@ -24,7 +24,7 @@ export default function SkillCard({ name, stack, abilities, level }: SkillCardPr
             )}
             <div className="flex flex-wrap gap-2">
                 {stack.map((tech, index) => (
-                    <span key={index} className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">
+                    <span key={`${tech}-${index}`} className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">
                         {tech}
                     </span>
                 ))}
