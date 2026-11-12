@@ -1,6 +1,8 @@
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import NavLinks from "@/components/NavLinks";
+
 
 import { Geist, Geist_Mono } from "next/font/google";
 
@@ -21,10 +23,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content="Chawanangwa Gondwe's personal portfolio website" />
       <title>Chawanangwa Gondwe Portfolio</title>
+      
       <body className="flex flex-col min-h-screen antialiased">
         <Header />
         <div className="flex-grow">{children}</div>
         <Footer />
+        
       </body>
     </html>
   );
